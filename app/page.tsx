@@ -8,7 +8,7 @@ export default function Home() {
     <main className="App">
       <div className='container'>
         <div className='logoBox'>
-          <Image src="/logo.png" alt="InterviewGPT logo" width="400" height="75" />
+          <Image src="/logo.png" alt="Visualize AI logo" width="400" height="75" />
         </div>
         <AssetsGenerator />
       </div>
