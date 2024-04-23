@@ -13,8 +13,8 @@ import {
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: 'Chat with Site GPT',
-  description: 'AI Agent that allows you to chat with any website',
+  title: 'Visualize AI',
+  description: 'Generate Visualize Value type illustrations for any ideas',
 }
 
 function Header() {
