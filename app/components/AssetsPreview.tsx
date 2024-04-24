@@ -19,7 +19,16 @@ const Modal: React.FC<{ src: string; onClose: () => void }> = ({ src, onClose })
             <FontAwesomeIcon icon={faTimes} />
           </div>
         </div>
-        <img src={src} alt="Modal Asset" className="max-h-[80vh] max-w-[80vw]" />
+        <Image 
+          src={src} 
+          alt={`Asset`} 
+          width={550}
+          height={550}
+          className="max-h-[80vh] max-w-[80vw]"
+          priority={true}
+          placeholder="blur"
+          blurDataURL="/low-res-placeholder.jpg"
+        />
       </div>
     </div>
   );
@@ -44,7 +53,17 @@ const AssetsPreview: React.FC<AssetsPreviewProps> = ({ assetUrls }) => {
         <div key={index} className="relative border-dashed border-2 border-gray-300 rounded-lg shadow-lg transition-shadow hover:shadow-xl aspect-w-1 aspect-h-1 w-full h-[260px] sm:w-[30%] max-w-xs overflow-hidden">
           {assetUrl ? (
             <div onClick={() => openModal(assetUrl)}>
-              <Image src={assetUrl} alt={`Asset ${index}`} layout="fill" objectFit="cover" style={{ cursor: 'pointer' }} />
+              <Image 
+                src={assetUrl} 
+                alt={`Asset ${index}`} 
+                layout="fill" 
+                objectFit="cover" 
+                style={{ cursor: 'pointer' }} 
+                sizes="(max-width: 768px) 100vw, 33vw"
+                priority={true}
+                placeholder="blur"
+                blurDataURL="/low-res-placeholder.jpg"
+              />
             </div>
           ) : (
             <div className="flex justify-center items-center h-full text-gray-500">
