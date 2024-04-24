@@ -30,8 +30,12 @@ const AssetsGenerator: React.FC = () => {
       },
       body: JSON.stringify({ prompt: getAssetPrompt(input) }),
     });
-    const { imageUrl } = await response.json();
-    setAssetUrls(assets => [...assets.slice(0,2), imageUrl]);
+    const { imageUrl, message } = await response.json();
+    if (imageUrl) {
+      setAssetUrls(assets => [...assets.slice(0,2), imageUrl]);
+    } else {
+      setError(message);
+    }
   };
 
   const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
