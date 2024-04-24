@@ -1,8 +1,8 @@
-# Chat with any website
+# Visualize AI
 
 > This app was built as part of a challenge in the **Codebender AI Bootcamp**. Learn how to build projects like these [here](https://lastcodebender.com/bootcamp).
 
-This app allows you to chat with any website.
+This app allows you to visualize ideas you have in the style of Visualize Value.
 
 <img src="./screenshot.jpg" alt="app demo" width=600 />
 
