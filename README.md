@@ -4,7 +4,7 @@
 
 This app allows you to visualize ideas you have in the style of Visualize Value.
 
-<img src="./screenshot.jpg" alt="app demo" width=600 />
+<img src="./screenshot.png" alt="app demo" width=600 />
 
 ## Getting Started
 
